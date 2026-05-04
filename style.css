@@ -76,6 +76,7 @@ footer{
   }
   
   .container {
+      display:flex;
       flex-direction:column;
     width: 100%; /* Контейнер пурраи экранро мегирад */
     padding: 10px;
