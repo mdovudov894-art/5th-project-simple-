@@ -1,0 +1,82 @@
+body {
+    background-color: hsl(233, 47%, 7%); /* Ин ҳамон ранги "чирнил"-и торик */
+    display: flex;
+    justify-content: center; /* Картаро дар мобайн мемонад (аз чап ба рост) */
+    align-items: center;    /* Картаро дар мобайн мемонад (аз боло ба поён) */
+    min-height: 100vh;      /* Барои он ки дар маркази экран истад */
+    margin: 0;
+    flex-direction: column;
+}
+.container {
+    font-family: 'Lexend Deca',sans-serif;
+    background-color: hsl(244, 38%, 16%); /* Ранги карта */
+    display: flex;
+    max-width: 1100px;      /* Бари карта */
+   overflow: hidden;
+    border-radius: 8px;     /* Кунҷҳои картаро каме мудаввар мекунад */       /* Барои он ки акс аз кунҷҳои мудаввар берун набарояд */
+}
+.card-left {
+    padding: 50px;          /* Масофа дар дохили блок */
+    flex: 1;                /* Ин блок нисфи картаро мегирад */
+}
+.card-left p{
+    font-size:15px;
+    font-weight: 400;
+    line-height: 1.5;
+    
+    color: hsla(0, 22%, 66%, 0.75)
+}
+
+h1 {
+    color: white;           /* Ранги сарлавҳа сафед */
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75); /* Ранги матни дароз (сафеди каме хира) */
+}
+span {
+    color: hsl(277, 64%, 61%); /* Ранги Soft violet */
+}
+.img-card {
+    width: 100%;
+    background-color: hsl(277, 64%, 61%); /* Ранги бунафш дар заминаи акс */
+    width:640px;
+    flex: 1;
+}
+
+.img-card img {
+    height: 100%;
+      object-fit: cover;    /* Аксро дуруст дар блок ҷой мекунад */
+    opacity:0.6;          /* Хира мекунад, то ранги бунафши паси он намоён шавад */
+     mix-blend-mode: multiply;/* Ин хосият аксро бо ранги бунафш омехта мекунад */
+}
+.omor {
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.omor h2{
+    color: rgb(231, 226, 226);
+}
+.omor p{
+    font-size:12px;
+    position: relative;
+    margin-top:-13px;
+    color: rgb(173, 148, 148);
+}
+footer{
+    color:rgb(187, 161, 161);
+}
+/* Барои экранҳои хурд (телефонҳо) */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue; /* Мисол: ранги замина иваз мешавад */
+  }
+  
+  .container {
+    width: 100%; /* Контейнер пурраи экранро мегирад */
+    padding: 10px;
+  }
+}
