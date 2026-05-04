@@ -71,14 +71,24 @@ footer{
 }
 /* Барои экранҳои хурд (телефонҳо) */
 @media (max-width: 600px) {
-  body {
-    background-color: lightblue; /* Мисол: ранги замина иваз мешавад */
-  }
-  
   .container {
-      display:flex;
-      flex-direction:column;
-    width: 100%; /* Контейнер пурраи экранро мегирад */
-    padding: 10px;
+    flex-direction: column-reverse; /* Ин матнро ба поён ва аксро ба боло мебарад */
+    width: 90%; /* Каме масофа аз канори экран мемонад */
+    margin: 20px auto;
+  }
+
+  .img-card {
+    width: 100%;
+    height: 250px; /* Барои телефон баландии аксро махсус муайян мекунем */
+  }
+
+  .card-left {
+    padding: 30px; /* Дар телефон масофаи даруниро камтар мекунем */
+    text-align: center; /* Матнҳоро дар марказ мемонем, мисли дизайн */
+  }
+
+  .omor {
+    flex-direction: column; /* Рақамҳоро дар телефон зери ҳам мечинем */
+    gap: 20px; /* Байни рақамҳо масофа мемонем */
   }
 }
